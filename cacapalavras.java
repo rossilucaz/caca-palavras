@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class casa {
+public class cacapalavras {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int linha = 0;
@@ -62,8 +62,7 @@ public class casa {
         }
 
         char[][] matriz = new char[linha][coluna];
-        char[] alfa = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
-                'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+        char[] alfa = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S','T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
         for (i = 0; i < linha; i++) {
             for (j = 0; j < coluna; j++)
                 matriz[i][j] = alfa[(char) (Math.random() * 26)];
