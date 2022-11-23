@@ -1,8 +1,11 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class cacapalavras {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Random rd = new Random();
+
         int linha = 0;
         int coluna = 0;
         int npalavras = 0;
@@ -62,10 +65,17 @@ public class cacapalavras {
         }
 
         char[][] matriz = new char[linha][coluna];
-        char[] alfa = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S','T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+        char[] alfa = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S','T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
         for (i = 0; i < linha; i++) {
             for (j = 0; j < coluna; j++)
                 matriz[i][j] = alfa[(char) (Math.random() * 26)];
+        }
+
+        for(i = 0; i < linha; i++){
+            int x = rd.nextInt(linha);
+        }
+            for(i = 0; i < coluna; i++){
+            int y = rd.nextInt(coluna);
         }
 
         System.out.println("\nCAÇA PALAVRAS");
@@ -79,4 +89,4 @@ public class cacapalavras {
         }
     }
 }
-// precisa incluir palavra na matriza
+// precisa incluir palavra na matriza 
