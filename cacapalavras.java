@@ -69,13 +69,9 @@ public class cacapalavras {
         for (i = 0; i < linha; i++) {
             for (j = 0; j < coluna; j++)
                 matriz[i][j] = alfa[(char) (Math.random() * 26)];
-        }
 
-        for(i = 0; i < linha; i++){
-            int x = rd.nextInt(linha);
-        }
-            for(i = 0; i < coluna; i++){
-            int y = rd.nextInt(coluna);
+
+        
         }
 
         System.out.println("\nCAÇA PALAVRAS");
